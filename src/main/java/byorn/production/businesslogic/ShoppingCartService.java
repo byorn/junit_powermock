@@ -32,7 +32,7 @@ public class ShoppingCartService {
 		
 		for(Integer cartItemId:myCart.keySet()){
 			Product product = myCart.get(cartItemId);
-			total.add(product.getProductPrice());
+			total = total.add(product.getProductPrice());
 		}
 		
 		return total;

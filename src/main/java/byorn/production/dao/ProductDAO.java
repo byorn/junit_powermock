@@ -12,8 +12,7 @@ public class ProductDAO {
 		
 		//this bit of code will actually be from the persistence framework like hibernate
 		Product product = new Product();
-		product.setId(1);
-		
+			
 		
 		return product;
 	}
