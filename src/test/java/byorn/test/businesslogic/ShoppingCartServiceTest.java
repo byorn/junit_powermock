@@ -41,9 +41,11 @@ public class ShoppingCartServiceTest {
 		PowerMockito.when(productDAO.getProductFromDataBase(anyInt()))
 				.thenReturn(product);
 
+		
+		//the actual call to the test class.
 		testShoppingCartService.addToCart(1);
 
-
+		//am veryfying if the product I added was actually added to the cart.
 		Assert.assertTrue(23==testShoppingCartService.getCartTotal().intValue());
 
 	}
